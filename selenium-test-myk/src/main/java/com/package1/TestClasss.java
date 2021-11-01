@@ -1,12 +1,11 @@
-package TestNgTest;
+package com.package1;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestClass {
-
+public class TestClasss {
 
 	WebDriver driver;
 
@@ -17,8 +16,8 @@ public class TestClass {
 
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			driver.get("https://testng.org/doc/selenium.html#configuration_methods");
-			// driver.getTitle();
+			driver.get("https://mvnrepository.com/");
+			System.out.println("Here is the Title " + driver.getTitle());
 			driver.manage().window().maximize();
 			try {
 				Thread.sleep(2000);
@@ -33,5 +32,4 @@ public class TestClass {
 		}
 
 	}
-
 }
